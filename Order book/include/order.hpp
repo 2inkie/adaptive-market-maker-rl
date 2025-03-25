@@ -47,7 +47,7 @@ class Order {
     OrderStatus getStatus() const { return status; }
     OrderType getType() const { return type; }
 
-    // Setters
+    // Setters -
     void setPrice(double price) { this->price = price; }
     void setQuantity(int quantity) { this->quantity = quantity; }
     void setSide(OrderSide side) { this->side = side; }

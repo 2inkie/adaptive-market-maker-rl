@@ -46,7 +46,7 @@ void Order::print() const {
               << ", Timestamp: " << timestamp << std::endl;
 }
 
-// Write order to binary file
+// Write order to binary file.
 void Order::writeToBinaryFile(std::ofstream &file) const {
     file.write(reinterpret_cast<const char *>(&id), sizeof(id));
     file.write(reinterpret_cast<const char *>(&timestamp), sizeof(timestamp));
